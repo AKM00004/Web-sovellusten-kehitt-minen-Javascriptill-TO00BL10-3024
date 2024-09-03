@@ -1,0 +1,65 @@
+var x = 50; 
+var order = 'Beer';
+
+if (x > 60) {
+    document.write("<h4>He’s over 60 years old!</h4>");
+    console.log("He’s over 60 years old!");
+} else if (x > 50 && x <= 60) {
+    document.write("<h4>He’s in his 50s!</h4>");
+    console.log("He’s in his 50s!");
+} else if (x > 40 && x <= 50) {
+    document.write("<strong>Middle aged man, who ordered some " + order + "</strong>");
+    console.log("Middle aged man, who ordered some " + order);
+} else if (x > 30 && x <= 40) {
+    document.write("<h4>He’s in his 30s!</h4>");
+    console.log("He’s in his 30s!");
+} else if (x > 20 && x <= 30) {
+    document.write("<h4>He’s in his 20s!</h4>");
+    console.log("He’s in his 20s!");
+} else {
+    document.write("<strong>It seems you're a bit underaged.</strong>");
+    console.log("It seems you're a bit underaged.");
+}
+
+
+
+var arr = [];
+
+for (var i = 0; i < 15; i++) { 
+    var randomNum = Math.floor(Math.random() * 100) + 1; // Random number between 1 and 100
+    arr.push(randomNum);
+    
+    // Output the generated number to the console
+    console.log("Generated number " + (i + 1) + ": " + randomNum);
+    
+    // Output the generated number using document.write with HTML formatting
+    document.write("<p>Generated number " + (i + 1) + ": <strong>" + randomNum + "</strong></p>");
+}
+
+// Output the entire array to the console as well
+console.log("All generated numbers: " + arr.join(", "));
+
+
+
+
+// Function to add two numbers
+function addNumbers(a, b) {
+    return a + b;
+}
+
+// Assign values to two variables
+var num1 = 60;
+var num2 = 45;
+
+// Call the function with the two variables
+var sum = addNumbers(num1, num2);
+
+// Check if the sum is over 100 and alert the user if true
+if (sum > 100) {
+    alert("The sum is over 100!");
+}
+
+// Output the values and the sum using document.write with HTML formatting
+document.write("<p>First number: <strong>" + num1 + "</strong></p>");
+document.write("<p>Second number: <strong>" + num2 + "</strong></p>");
+document.write("<p>Sum: <strong>" + sum + "</strong></p>");
